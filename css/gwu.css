@@ -1,0 +1,149 @@
+/* 重置样式 */
+*{padding: 0;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none;color: black;}
+img{vertical-align: top; border: none;}
+html,body{
+	      font-size: 10px;
+          background: #EFEFF4;
+		  }
+/* 页头 */
+header{
+	width: 100%;
+	height: 6rem;
+	background: #F5F5F5;
+	/* 图形阴影 */
+	box-shadow: 0 0.1rem .6rem #CCCCCC;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 2.2rem;
+	display: flex;
+	align-items: center; /* 侧轴单行居中 */
+	padding: 2rem;
+	box-sizing: border-box;
+}
+header .icon{
+	font-size: 2.4rem;
+}
+header .icon-shanchu{
+	position: absolute;
+	right: 2rem;
+}
+/* 购物车清单 */
+.shop_list{
+	width: 100%;
+	margin: 6rem 0 15.3rem;
+}
+.shop_list li{
+	width: 100%;
+	height: 16rem;
+	background: white;
+	display: flex;
+	align-items: center; /* 居中 */
+    /* 贴二边平分剩余空间 */
+	justify-content: space-around;
+	margin-bottom: 1.2rem;
+}
+.icon-weixuanzhongyuanquan{
+	font-size: 4rem;
+	color: #999;
+}
+.shop_list li>img{
+	width: 12rem;
+}
+.right{
+	width: 22rem;
+}
+.right p:nth-child(1){
+	width: 21rem;
+	line-height: 3rem;
+	font-size: 1.8rem;
+	/* 规定段落文本不换行 */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.right p:nth-child(2){
+	font-size: 1.4rem;
+	color: #999;
+}
+.right p:nth-child(3){
+	font-size: 2rem;
+	color: #FC9720;
+	margin:.8rem 0;
+}
+.right .count{
+	display: flex;
+	align-items: center;
+}
+.right .count img{
+	width: 3rem;
+	margin-right: 1rem;
+}
+.right .count span{
+	font-size: 2rem;
+	margin-right: 1rem;
+	color: #22D38E;
+}
+.right .count .icon{
+	font-size: 3rem;
+	margin-left: 8rem;
+}
+/* 合计 */ 
+.total{
+	width: 100%;
+    height: 7rem;
+	font-size: 2rem;
+	background: white;
+	display: flex;
+		/* 二边贴边平分空间 */
+	justify-content: space-between;
+	/* 垂直居中 */
+	align-items: center;
+	border-top: 1px solid #F4F4F4;
+	position: fixed;
+	left: 0;
+	bottom: 7rem;
+}
+.total_price{
+	margin-left: 2rem;
+}
+.total_price span:nth-child(2){
+	color: red;
+}
+.total p:nth-child(2){
+	width: 16.6rem;
+    height: 100%;
+	line-height: 7rem;
+	text-align: center;
+	color: white;
+	background: #00CC7D;
+}
+
+ /* footer导航 */
+.footer{
+	width: 100%;
+	height: 7rem;
+	background: white;
+	display: flex;
+	/* 二边贴边平分空间 */
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.footer li{
+	width: 30%;
+	/* 规定段落文本不换行 */
+	white-space: nowrap;
+	text-align:center;
+}
+.footer li a .icon{
+	color: gold;
+	font-size: 3rem;
+}
+.footer li p{
+	font-size: 1.6rem;
+}
